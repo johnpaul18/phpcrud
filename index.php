@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="w-50">
-                    <form action="crud.php" method="post">
+                    <form action="index.php" method="post">
                         <div class="form-group mb-1">
                             <label for="username" >Username</label>
                             <input type="text" name="username" class="form-control">
@@ -36,9 +36,9 @@
                         </div>
                         <div class="form-group mb-1">
                             <select class="form-select" name="action" id="">
-                                <option value="delete">Delete</option>
-                                <option value="update">Update</option>
                                 <option value="add">ADD</option>
+                                <option value="delete" >Delete</option>
+                                <option value="update">Update</option>
                             </select>
                         </div>
                         <div class="form-group mb-1">

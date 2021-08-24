@@ -7,15 +7,18 @@
     }
 
     function actions(){
+        if(isset($_POST['userId'])){
             if($_POST['action'] == "update"){
                 updateTable($_POST);
             }
             if($_POST['action'] == "delete"){
                 deleteUser($_POST);
             }
-            if($_POST['action'] == "add"){
-                addUser($_POST);
-            }
+        }
+        
+        if($_POST['action'] == "add"){
+            addUser($_POST);
+        }
     }
 
     function updateTable($users){
